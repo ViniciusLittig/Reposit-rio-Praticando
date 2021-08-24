@@ -13,17 +13,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.min.css">
     <!-- Estilos Template -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css">
-
+    
+<style>
+    .ligar{
+        font-size: 30px;
+        color: red;
+    }
+    .ligar:hover {
+        color: greenyellow;
+    }
+    #lampada {
+        background-image: url('img/on.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    #lampada2 {
+        background-image: url('img/off.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+</style>
 
     <title>Autenticação</title>
 </head>
 
-<body class="hold-transition login-page" style="background-color: #292929;">
+<body  id="lampada" class="off hold-transition login-page">
+
     <div class="login-box">
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
-            <div class="card-header text-center">
-                <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a>
+            <div id="ligar" class="card-header text-center">
+                <a href="../../index2.html" class="h1"><b>U</b>Bank</a>
+                <i class="ligar fas fa-piggy-bank"></i>
+                <i class="ligar fas fa-power-off icons" style="float: right;"></i>
             </div>
             <div class="card-body">
             <div class="callout callout-warning">
@@ -66,7 +90,7 @@
                 <!-- /.social-auth-links -->
 
                 <p class="mb-1">
-                    <a href="forgot-password.html">Esqueceu a Senha</a>
+                    <a href="forgot-password.html">Esqueceu a Senha</a><br>
                 </p>
             </div>
             <!-- /.card-body -->
@@ -80,6 +104,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
     <!-- Biblioteca JavaScript Admin LTDE -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
+
+    
+<script>
+    var lampada = document.getElementById('lampada');
+    var ligar = document.getElementById('ligar');
+  
+    ligar.addEventListener('click', () => {
+        if (lampada.className == 'on login-page') {
+            lampada.id = 'lampada';
+            lampada.className = 'off login-page';
+        } else {
+            lampada.id = 'lampada2';
+            lampada.className = 'on login-page';
+        }
+    });
+</script>
+
+
 
 </body>
 
