@@ -7,11 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <?php include_once "csspadrao.php"; ?>
+
+    <style>
+            #img{
+        background-image: url('https://egestorab.saude.gov.br/resource/img/fundo_login.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    </style>
 </head>
 
 <body>
 
-    <body class="hold-transition register-page">
+    <body id="img" class="hold-transition register-page">
         <div class="register-box">
             <div class="card card-outline card-primary">
                 <div class="card-header text-center">
@@ -52,6 +61,7 @@
                                         Estou de acordo com todas as condições, <a href="#">Leia os termos</a>
                                     </label>
                                 </div>
+                                
                             </div>
                         </div>
 
