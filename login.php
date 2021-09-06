@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include_once "csspadrao.php"; ?>
+    <?php include_once "css/csspadrao.php"; ?>
 <style>
     .ligar{
         font-size: 30px;
@@ -90,7 +90,12 @@
         <!-- /.card -->
     </div>
 
-    <?php include_once "jspadrao.php"; ?>
+    <script src="./Css_fixo/jquery.js"></script>
+<script src="./Css_fixo/jquery.min.js"></script>
+<script src="./Css_fixo/bootstrap.min.js"></script>
+<script src="./Css_fixo/adminlte.min.js"></script>
+<script src="./Css_fixo/jquery.validate.min.js"></script>
+<script src="./Css_fixo/messages_pt_BR.min.js"></script>
     
 <script>
     var lampada = document.getElementById('lampada');
